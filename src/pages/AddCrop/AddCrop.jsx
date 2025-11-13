@@ -199,8 +199,6 @@ const AddCrop = () => {
                 </p>
               )}
             </div>
-
-            {/* Price Per Unit */}
             <div>
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Price per Unit (৳) <span className="text-red-500">*</span>
