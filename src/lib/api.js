@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "agro-bridge-server.vercel.app";
+  import.meta.env.VITE_API_URL || "https://agro-bridge-server.vercel.app/";
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
