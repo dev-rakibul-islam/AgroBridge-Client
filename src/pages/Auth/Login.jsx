@@ -113,7 +113,6 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Right Side - Form */}
         <div className="glass-premium rounded-2xl p-8 md:p-10 backdrop-blur-lg shadow-premium">
           <h3 className="text-3xl font-bold text-slate-900">Login</h3>
           <p className="mt-2 text-slate-600">
