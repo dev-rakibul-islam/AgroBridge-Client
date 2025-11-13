@@ -262,7 +262,6 @@ const AddCrop = () => {
               )}
             </div>
 
-            {/* Photo URL */}
             <div className="md:col-span-2">
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Photo URL <span className="text-red-500">*</span>
