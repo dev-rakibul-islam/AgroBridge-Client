@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCd6_UXxH0a-jUstDkOIZF7FAz15Kuxe3s",
-  authDomain: "agribridge-4305f.firebaseapp.com",
-  projectId: "agribridge-4305f",
-  storageBucket: "agribridge-4305f.firebasestorage.app",
-  messagingSenderId: "382692515643",
-  appId: "1:382692515643:web:8067b1feebe94343c0e11e",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
