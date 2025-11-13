@@ -81,9 +81,12 @@ const Header = () => {
       <div className="mx-auto max-w-7xl">
         <div className="glass mx-4 mt-4 flex items-center justify-between rounded-2xl px-6 py-4 md:px-8">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-emerald-500 via-cyan-500 to-blue-500 text-white font-bold transition-transform duration-300 group-hover:scale-105">
-              AB
-            </div>
+            <img
+              src="https://i.ibb.co.com/zHtkgy2t/agro-main-logo.png"
+              alt="AgroBridge Logo"
+              className="h-10 w-10 rounded-xl object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
             <span className="gradient-text text-2xl font-extrabold hidden sm:inline">
               AgroBridge
             </span>

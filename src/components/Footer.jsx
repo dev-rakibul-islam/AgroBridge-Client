@@ -142,7 +142,7 @@ const Footer = () => (
             <h4 className="text-lg font-bold text-white mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-sm text-slate-200/80">
               <li className="font-medium">📧 support@agrobridge.com</li>
-              <li className="font-medium">📱 +880 1234 567 890</li>
+              <li className="font-medium">📱 +880 1863 972 739</li>
               <li className="font-medium">📍 Dhaka, Bangladesh</li>
               <li>
                 <a
