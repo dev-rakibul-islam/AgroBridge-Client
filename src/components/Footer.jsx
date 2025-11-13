@@ -11,9 +11,12 @@ const Footer = () => (
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-xl bg-linear-to-br from-emerald-500 to-cyan-500 text-white font-bold text-lg flex items-center justify-center shadow-lg">
-                AB
-              </div>
+              <img
+                src="https://i.ibb.co.com/zHtkgy2t/agro-main-logo.png"
+                alt="AgroBridge Logo"
+                className="h-10 w-10 rounded-xl object-contain transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
               <span className="gradient-text text-2xl font-extrabold">
                 AgroBridge
               </span>
