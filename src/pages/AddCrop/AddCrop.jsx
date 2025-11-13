@@ -124,7 +124,6 @@ const AddCrop = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
-            {/* Crop Name */}
             <div className="md:col-span-2">
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Crop Name <span className="text-red-500">*</span>
@@ -173,7 +172,6 @@ const AddCrop = () => {
               )}
             </div>
 
-            {/* Location */}
             <div>
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Location <span className="text-red-500">*</span>
