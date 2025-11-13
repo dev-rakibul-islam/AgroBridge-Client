@@ -128,7 +128,7 @@ const Register = () => {
   return (
     <section className="mx-auto flex min-h-screen max-w-6xl items-center px-4 py-12">
       <div className="grid w-full gap-8 md:gap-12 md:grid-cols-2 items-start">
-        {/* Left Side - Branding */}
+        {" "}
         <div className="hidden md:flex flex-col justify-center space-y-8">
           <div>
             <img
@@ -173,7 +173,6 @@ const Register = () => {
             </div>
           </div>
         </div>
-
         {/* Right Side - Form */}
         <div className="glass-premium rounded-2xl p-8 md:p-10 backdrop-blur-lg shadow-premium">
           <h3 className="text-3xl font-bold text-slate-900">Create Account</h3>
