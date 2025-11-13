@@ -67,7 +67,6 @@ const Login = () => {
   return (
     <section className="mx-auto flex min-h-screen max-w-6xl items-center px-4 py-12">
       <div className="grid w-full gap-8 md:gap-12 md:grid-cols-2 items-center">
-        {/* Left Side - Branding */}
         <div className="hidden md:flex flex-col justify-center space-y-8">
           <div>
             <img
