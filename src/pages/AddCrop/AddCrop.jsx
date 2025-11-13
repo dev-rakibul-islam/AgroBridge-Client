@@ -243,7 +243,6 @@ const AddCrop = () => {
               </select>
             </div>
 
-            {/* Quantity */}
             <div>
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Estimated Quantity <span className="text-red-500">*</span>
