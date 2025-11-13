@@ -70,9 +70,12 @@ const Login = () => {
         {/* Left Side - Branding */}
         <div className="hidden md:flex flex-col justify-center space-y-8">
           <div>
-            <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-emerald-500 to-cyan-500 text-white font-bold text-2xl shadow-lg">
-              AB
-            </div>
+            <img
+              src="https://i.ibb.co.com/zHtkgy2t/agro-main-logo.png"
+              alt="AgroBridge Logo"
+              className="h-10 w-10 rounded-xl object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
             <h2 className="mt-6 text-4xl font-extrabold text-slate-900">
               Welcome back to
               <span className="gradient-text block"> AgroBridge</span>
