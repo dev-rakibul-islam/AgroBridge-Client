@@ -1,6 +1,6 @@
 # AgroBridge - Connecting Farmers & Agro Enthusiasts
 
-**Live Site:** [AgroBridge Live](https://agrobridge.netlify.app)
+**Live Site:** [AgroBridge Live](https://agrobridge-web.netlify.app)
 
 AgroBridge is a modern web platform that bridges the gap between farmers and agricultural enthusiasts. It enables users to discover, share, and trade agricultural products and services in a seamless, user-friendly environment.
 

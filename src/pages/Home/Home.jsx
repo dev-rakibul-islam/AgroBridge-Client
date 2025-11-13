@@ -117,9 +117,9 @@ const Home = () => {
   });
 
   return (
-    <div className="space-y-24 pb-20">
+    <div className="space-y-12 md:space-y-24 pb-10 md:pb-20">
       {/* Hero Section */}
-      <section className="relative mx-auto h-screen max-w-7xl overflow-hidden px-4 flex items-center">
+      <section className="relative mx-auto h-96 md:h-screen max-w-7xl overflow-hidden px-3 md:px-4 flex items-center">
         <div className="glass-premium soft-shadow overflow-hidden w-full h-96 md:h-full">
           <Swiper
             modules={[Autoplay, Pagination]}
@@ -138,23 +138,23 @@ const Home = () => {
                   />
                   <div className="absolute inset-0 bg-black/40" />
                   <div className="absolute inset-0 flex items-center justify-center px-4 py-10">
-                    <div className=" max-w-2xl rounded-2xl p-8 md:p-12 text-center text-white animate-slide-up">
-                      <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                    <div className=" max-w-2xl rounded-2xl p-4 md:p-8 lg:p-12 text-center text-white animate-slide-up">
+                      <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
                         {slide.title}
                       </h1>
-                      <p className="mt-4 text-base md:text-lg text-white/90">
+                      <p className="mt-2 md:mt-4 text-sm md:text-lg text-white/90">
                         {slide.description}
                       </p>
-                      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                      <div className="mt-4 md:mt-8 flex flex-col sm:flex-row justify-center gap-2 sm:gap-4">
                         <Link
                           to="/crops"
-                          className="px-8 py-3 rounded-lg bg-linear-to-r from-emerald-500 to-cyan-500 text-white font-bold hover:from-emerald-600 hover:to-cyan-600 shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-105"
+                          className="px-6 sm:px-8 py-2 md:py-3 text-sm md:text-base rounded-lg bg-linear-to-r from-emerald-500 to-cyan-500 text-white font-bold hover:from-emerald-600 hover:to-cyan-600 shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-105"
                         >
                           Explore Crops
                         </Link>
                         <Link
                           to="/register"
-                          className="px-8 py-3 rounded-lg border-2 border-white text-white font-bold hover:bg-white/20 backdrop-blur-sm transition-all duration-300"
+                          className="px-6 sm:px-8 py-2 md:py-3 text-sm md:text-base rounded-lg border-2 border-white text-white font-bold hover:bg-white/20 backdrop-blur-sm transition-all duration-300"
                         >
                           Join AgroBridge
                         </Link>
@@ -169,7 +169,7 @@ const Home = () => {
       </section>
 
       {/* Latest Crops Section */}
-      <section className="mx-auto max-w-7xl px-4">
+      <section className="mx-auto max-w-7xl px-3 md:px-4 py-8 md:py-12">
         <SectionTitle
           eyebrow="🌟 Fresh Picks"
           title="Latest crop posts"
@@ -196,10 +196,10 @@ const Home = () => {
                 ))}
               </div>
             )}
-            <div className="mt-12 text-center">
+            <div className="mt-8 md:mt-12 text-center">
               <Link
                 to="/crops"
-                className="px-8 py-3 rounded-lg bg-linear-to-r from-emerald-500 to-cyan-500 text-white font-bold hover:from-emerald-600 hover:to-cyan-600 shadow-md hover:shadow-lg transition-all duration-300 inline-block hover:scale-105"
+                className="px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-lg bg-linear-to-r from-emerald-500 to-cyan-500 text-white font-bold hover:from-emerald-600 hover:to-cyan-600 shadow-md hover:shadow-lg transition-all duration-300 inline-block hover:scale-105"
               >
                 View all crops →
               </Link>
@@ -210,17 +210,17 @@ const Home = () => {
 
       {/* How It Works Section */}
       <section className="">
-        <div className="mx-auto max-w-7xl px-4 py-16">
+        <div className="mx-auto max-w-7xl px-3 md:px-4 py-8 md:py-16">
           <SectionTitle
             eyebrow="⚡ Process"
             title="How AgroBridge works"
             description="We combine networking and trade to help agri professionals collaborate faster."
           />
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-4 md:gap-8 md:grid-cols-3">
             {howItWorks.map((item) => (
               <div
                 key={item.title}
-                className="glass-premium rounded-xl p-8 hover:shadow-glow transition-all duration-500 stagger-{idx+1}"
+                className="glass-premium rounded-xl p-5 md:p-8 hover:shadow-glow transition-all duration-500 stagger-{idx+1}"
               >
                 <div
                   className={`mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br ${item.color} text-3xl shadow-lg`}
@@ -240,30 +240,32 @@ const Home = () => {
       </section>
 
       {/* News Section */}
-      <section className="mx-auto max-w-7xl px-4">
+      <section className="mx-auto max-w-7xl px-3 md:px-4 py-8 md:py-12">
         <SectionTitle
           eyebrow="📰 Insights"
           title="Agro news & stories"
           description="Stay informed with curated stories shaping the future of agriculture."
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-4 md:gap-6 md:grid-cols-3">
           {newsArticles.map((article) => (
             <div
               key={article.id}
-              className="glass-premium rounded-2xl p-6 hover:shadow-glow transition-all duration-500 border border-white/50 stagger-{idx+1}"
+              className="glass-premium rounded-2xl p-4 md:p-6 hover:shadow-glow transition-all duration-500 border border-white/50 stagger-{idx+1}"
             >
-              <div className="text-4xl mb-3">{article.icon}</div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <div className="text-3xl md:text-4xl mb-2 md:mb-3">
+                {article.icon}
+              </div>
+              <h3 className="text-base md:text-lg font-bold text-slate-900">
                 {article.title}
               </h3>
-              <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+              <p className="mt-2 md:mt-3 text-xs md:text-sm text-slate-600 leading-relaxed">
                 {article.excerpt}
               </p>
               <a
                 href={article.link}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors duration-300"
+                className="mt-3 md:mt-4 inline-flex items-center gap-2 text-xs md:text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors duration-300"
               >
                 Read more →
               </a>
@@ -274,33 +276,33 @@ const Home = () => {
 
       {/* Extra Sections */}
       <section>
-        <div className="mx-auto max-w-7xl px-4 py-16">
+        <div className="mx-auto max-w-7xl px-3 md:px-4 py-8 md:py-16">
           <SectionTitle
             eyebrow="✨ Highlights"
             title="Grow with confidence"
             description="Designed to support every chapter of your agri journey."
           />
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-4 md:gap-8 md:grid-cols-2">
             {extraSections.map((section) => (
               <div
                 key={section.id}
                 id={section.id}
-                className="glass-premium rounded-xl p-8 hover:shadow-premium transition-all duration-500 border border-white/50 stagger-{idx+1}"
+                className="glass-premium rounded-xl p-5 md:p-8 hover:shadow-premium transition-all duration-500 border border-white/50 stagger-{idx+1}"
               >
                 <div
-                  className={`inline-flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br ${section.color} text-2xl mb-4`}
+                  className={`inline-flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-xl bg-linear-to-br ${section.color} text-lg md:text-2xl mb-3 md:mb-4`}
                 >
                   {section.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="text-lg md:text-2xl font-bold text-slate-900">
                   {section.title}
                 </h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                <p className="mt-2 md:mt-3 text-xs md:text-sm text-slate-600 leading-relaxed">
                   {section.text}
                 </p>
                 <Link
                   to={section.link}
-                  className="mt-5 inline-flex items-center text-emerald-600 hover:text-emerald-700 font-bold transition-colors duration-300"
+                  className="mt-3 md:mt-5 inline-flex items-center text-emerald-600 hover:text-emerald-700 font-bold text-sm md:text-base transition-colors duration-300"
                 >
                   {section.cta} →
                 </Link>
@@ -309,28 +311,28 @@ const Home = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="mt-12 grid gap-6 rounded-2xl glass-premium p-8 md:grid-cols-3 border border-white/50">
+          <div className="mt-8 md:mt-12 grid gap-4 md:gap-6 rounded-2xl glass-premium p-6 md:p-8 md:grid-cols-3 border border-white/50">
             <div className="text-center">
-              <h4 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+              <h4 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
                 12K+
               </h4>
-              <p className="mt-2 text-sm text-slate-600">
+              <p className="mt-1 md:mt-2 text-xs md:text-sm text-slate-600">
                 Active crop listings shared by the community
               </p>
             </div>
             <div className="text-center">
-              <h4 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+              <h4 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
                 4.7/5
               </h4>
-              <p className="mt-2 text-sm text-slate-600">
+              <p className="mt-1 md:mt-2 text-xs md:text-sm text-slate-600">
                 Average collaboration rating from partner feedback
               </p>
             </div>
             <div className="text-center">
-              <h4 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+              <h4 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
                 72hrs
               </h4>
-              <p className="mt-2 text-sm text-slate-600">
+              <p className="mt-1 md:mt-2 text-xs md:text-sm text-slate-600">
                 Median time to confirm interests on popular crops
               </p>
             </div>
