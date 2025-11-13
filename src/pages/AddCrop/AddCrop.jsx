@@ -224,8 +224,6 @@ const AddCrop = () => {
                 </p>
               )}
             </div>
-
-            {/* Unit */}
             <div>
               <label className="block text-sm font-bold text-slate-900 mb-2">
                 Unit
