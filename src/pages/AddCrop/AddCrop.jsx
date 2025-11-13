@@ -123,7 +123,6 @@ const AddCrop = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Two Column Layout */}
           <div className="grid gap-6 md:grid-cols-2">
             {/* Crop Name */}
             <div className="md:col-span-2">
